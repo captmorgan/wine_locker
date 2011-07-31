@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Taster:</b>
+  <%= @wine.name %>
+</p>
+
+<p>
+  <b>Producer:</b>
+  <%= @wine.producer %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @wine.year %>
+</p>
+
+<p>
+  <b>Grape:</b>
+  <%= @wine.grape %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @wine.rating %>
+</p>
+
+<p>
+  <b>Tasting Date:</b>
+  <%= @wine.tasting_date %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @wine.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_wine_path(@wine) %> |
+<%= link_to 'Back', wines_path %>

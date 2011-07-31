@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WineLocker</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :all %>
+    <%= csrf_meta_tag %>
+</head>
+<body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("div.center").corner("round 12px");
+        $("div.bevelcorner").corner("round 12px");
+        $("div.titleblock").corner("round 12px");
+//        $("div.bevelcorner").corner("bevel 8px").parent().css('padding', '10px').corner("bevel 14px");
+    });
+</script>
+
+<div id="scroller" >
+    <div class="titleblock">
+        <h1>Wine Locker</h1>
+    </div>
+
+<div id="content" class="bevelcorner">
+    <div class="center">
+        <%= yield %>
+    </div>
+</div>
+</div>
+</body>
+</html>

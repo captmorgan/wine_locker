@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  producer: MyString
+  year: MyString
+  grape: MyString
+  rating: 1
+  date: 
+  price: 9.99
+
+two:
+  name: MyString
+  producer: MyString
+  year: MyString
+  grape: MyString
+  rating: 1
+  date: 
+  price: 9.99

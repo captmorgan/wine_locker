@@ -1,0 +1,46 @@
+div.palette {
+    color: #000000;
+    color: #221122;
+    color: #443344;
+    color: #ccdddd;
+    color: #775577;
+
+    color: #331122;
+    color: #553344;
+    color: #eeffff;
+    color: #994477;
+}
+
+html, body {
+    margin:0; padding:0; width:100%; height:100%; overflow:hidden; text-align:left;
+    background-color: #443344;
+    color: #221122;
+}
+
+div.bevelcorner {
+    /*background-color: #443344;*/
+    color: #221122;
+    padding: 10px;
+}
+
+div.center {
+    background-color: #ccdddd;
+    color: #221122;
+    padding: 30px;
+}
+
+div.titleblock {
+    position:relative;
+    background-color: #994477;
+    color: #221122;
+    top: 10px;
+    width: 80%;
+    height: 100px;
+    left: 100px;
+    /*padding:20px 100px 20px 100px;*/
+    z-index:2;
+}
+
+#background{position:absolute; z-index:1; width:100%; height:100%;}
+#scroller{position:absolute; width:100%; height:100%; top:0; left:0; overflow:auto; z-index:2;}
+#content {padding:20px 100px 20px 100px;}
