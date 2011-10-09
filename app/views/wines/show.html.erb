@@ -2,22 +2,22 @@
 
 <p>
   <b>Taster:</b>
-  <%= @wine.name %>
+  <%= @wine.user %>
 </p>
 
 <p>
-  <b>Producer:</b>
-  <%= @wine.producer %>
+  <b>Winery:</b>
+  <%= @wine.winery %>
 </p>
 
 <p>
-  <b>Year:</b>
-  <%= @wine.year %>
+  <b>Blend:</b>
+  <%= @wine.blend%>
 </p>
 
 <p>
-  <b>Grape:</b>
-  <%= @wine.grape %>
+  <b>Vintage:</b>
+  <%= @wine.vintage %>
 </p>
 
 <p>
@@ -26,15 +26,24 @@
 </p>
 
 <p>
+  <b>Price:</b>
+  <%= @wine.price %>
+</p>
+
+<p>
   <b>Tasting Date:</b>
   <%= @wine.tasting_date %>
 </p>
 
 <p>
-  <b>Price:</b>
-  <%= @wine.price %>
+  <b>Purchase Date:</b>
+  <%= @wine.purchase_date %>
 </p>
 
+<p>
+  <b>Comment:</b>
+  <%= @wine.comment %>
+</p>
 
 <%= link_to 'Edit', edit_wine_path(@wine) %> |
 <%= link_to 'Back', wines_path %>

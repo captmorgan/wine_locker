@@ -13,31 +13,39 @@
 
   <div class="field">
     <%= f.label 'Taster' %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :user %>
   </div>
   <div class="field">
-    <%= f.label :producer %><br />
-    <%= f.text_field :producer %>
+    <%= f.label :winery %><br />
+    <%= f.text_field :winery %>
   </div>
   <div class="field">
-    <%= f.label :year %><br />
-    <%= f.text_field :year %>
+    <%= f.label :blend %><br />
+    <%= f.text_field :blend %>
   </div>
   <div class="field">
-    <%= f.label :grape %><br />
-    <%= f.text_field :grape %>
+    <%= f.label :vintage %><br />
+    <%= f.text_field :vintage %>
   </div>
   <div class="field">
     <%= f.label :rating %><br />
     <%= f.text_field :rating %>
   </div>
   <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
     <%= f.label :tasting_date %><br />
     <%= f.text_field :tasting_date %>
   </div>
   <div class="field">
-    <%= f.label :price %><br />
-    <%= f.text_field :price %>
+    <%= f.label :purchase_date %><br />
+    <%= f.text_field :purchase_date %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment %>
   </div>
   <div class="actions">
     <%= f.submit %>

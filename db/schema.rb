@@ -10,16 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110726042935) do
+ActiveRecord::Schema.define(:version => 20111009211707) do
 
   create_table "wines", :force => true do |t|
-    t.string   "name"
-    t.string   "producer"
-    t.string   "year"
-    t.string   "grape"
+    t.string   "user"
+    t.string   "winery"
+    t.string   "blend"
+    t.string   "vintage"
+    t.string   "wine_name"
     t.integer  "rating"
-    t.date     "tasting_date"
+    t.text     "comment"
     t.decimal  "price"
+    t.datetime "tasting_date"
+    t.datetime "purchase_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

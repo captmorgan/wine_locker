@@ -1,19 +1,25 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  producer: MyString
-  year: MyString
-  grape: MyString
+  user: MyString
+  winery: MyString
+  blend: MyString
+  vintage: MyString
+  wine_name: MyString
   rating: 1
-  date: 
+  comment: MyText
   price: 9.99
+  tasting_date: 2011-10-09 14:17:07
+  purchase_date: 2011-10-09 14:17:07
 
 two:
-  name: MyString
-  producer: MyString
-  year: MyString
-  grape: MyString
+  user: MyString
+  winery: MyString
+  blend: MyString
+  vintage: MyString
+  wine_name: MyString
   rating: 1
-  date: 
+  comment: MyText
   price: 9.99
+  tasting_date: 2011-10-09 14:17:07
+  purchase_date: 2011-10-09 14:17:07

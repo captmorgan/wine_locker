@@ -1,13 +1,16 @@
+<link href="stylesheets/tablecloth.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="javascripts/tablecloth.js"></script>
 
 <table>
   <tr>
     <th>Taster</th>
-    <th>Producer</th>
-    <th>Year</th>
-    <th>Grape</th>
+    <th>Winery</th>
+    <th>Blend</th>
+    <th>Vintage</th>
     <th>Rating</th>
-    <th>Tasting Date</th>
     <th>Price</th>
+    <th>Tasting Date</th>
+    <th>Purchase Date</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,14 +18,15 @@
 
 <% @wines.each do |wine| %>
   <tr>
-    <td><%= wine.name %></td>
-    <td><%= wine.producer %></td>
-    <td><%= wine.year %></td>
-    <td><%= wine.grape %></td>
+    <td><%= wine.user %></td>
+    <td><%= wine.winery %></td>
+    <td><%= wine.blend %></td>
+    <td><%= wine.vintage %></td>
     <td><%= wine.rating %></td>
-    <td><%= wine.tasting_date %></td>
     <td><%= wine.price %></td>
-    <td><%= link_to 'Show', wine %></td>
+    <td><%= wine.tasting_date %></td>
+    <td><%= wine.purchase_date %></td>
+    <td><%= link_to 'Show', wine, :class=> 'link_to' %></td>
     <td><%= link_to 'Edit', edit_wine_path(wine) %></td>
     <td><%= link_to 'Destroy', wine, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
@@ -31,7 +35,7 @@
 
 <br />
 
-<%= link_to 'New Wine', new_wine_path %>
+<%= link_to 'New Wine', new_wine_path, :class=> 'link_to' %>
 </div>
 
 </div>
