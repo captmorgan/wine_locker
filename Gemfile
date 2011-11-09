@@ -8,6 +8,9 @@ gem 'rails', '3.0.9'
 gem 'pg'
 gem 'jquery-rails'
 
+gem "nifty-generators", :group => :development
+gem "mocha", :group => :development
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -30,3 +33,5 @@ gem 'jquery-rails'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "bcrypt-ruby", :require => "bcrypt"
+gem "mocha", :group => :test

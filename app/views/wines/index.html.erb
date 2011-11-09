@@ -7,6 +7,7 @@
     <th>Winery</th>
     <th>Blend</th>
     <th>Vintage</th>
+    <th>Wine Name</th>
     <th>Rating</th>
     <th>Price</th>
     <th>Tasting Date</th>
@@ -22,13 +23,14 @@
     <td><%= wine.winery %></td>
     <td><%= wine.blend %></td>
     <td><%= wine.vintage %></td>
+    <td><%= wine.wine_name %></td>
     <td><%= wine.rating %></td>
     <td><%= wine.price %></td>
     <td><%= wine.tasting_date %></td>
     <td><%= wine.purchase_date %></td>
     <td><%= link_to 'Show', wine, :class=> 'link_to' %></td>
-    <td><%= link_to 'Edit', edit_wine_path(wine) %></td>
-    <td><%= link_to 'Destroy', wine, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Edit', edit_wine_path(wine), :class=> 'link_to'  %></td>
+    <td><%= link_to 'Destroy', wine, :class=> 'link_to' , :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
